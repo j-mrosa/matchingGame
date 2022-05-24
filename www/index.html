@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style id="hiddenStyle">
+        .hidden {
+            opacity: 0;
+        }
+    </style>
+
+    <title>Matching Game</title>
+</head>
+
+<body>
+    <div class="app">
+
+        <!-- bubbles background -->
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+        <div class="bubble"><span class="dot"></span></div>
+
+        <!-- Heading -->
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="card  mainTitle mb-0 ">
+                        <h1 class="font-weight-bold text-center mb-0 my-2">
+                            <span>Matching Game</span></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main game -->
+        <div class="container mainGame">
+            <div class="row">
+                <div class="col-3">
+                    <div class="box"></div>
+                </div>
+                <div class="col-3">
+                    <div class="box"></div>
+                </div>
+                <div class="col-3">
+                    <div class="box"></div>
+                </div>
+                <div class="col-3">
+                    <div class="box"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="box"></div>
+                </div>
+                <div class="col-3">
+                    <div class="box"></div>
+                </div>
+                <div class="col-3">
+                    <div class="box"></div>
+                </div>
+                <div class="col-3">
+                    <div class="box"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="box"></div>
+                </div>
+                <div class="col-3">
+                    <div class="box"></div>
+                </div>
+                <div class="col-3">
+                    <div class="box"></div>
+                </div>
+                <div class="col-3">
+                    <div class="box"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="box"></div>
+                </div>
+                <div class="col-3">
+                    <div class="box"></div>
+                </div>
+                <div class="col-3">
+                    <div class="box"></div>
+                </div>
+                <div class="col-3">
+                    <div class="box"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- status panel + restart button -->
+        <div class="container mt-4">
+            <div class="row ">
+                <div class="col-12">
+                    <div class="card mb-5 py-2 px-4 statusPanel">
+                        <div class="row ">
+                            <div class="col-3">
+                                Score: <span class="score"></span>
+                            </div>
+                            <div class="col-9 p-0 text-right">
+                                <input type="checkbox" id="devModeCheckbox"
+                                    class=" mx-2">Developer
+                                Mode
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 text-center">
+                    <div class="btn btn-light text-info p-3 mb-4"
+                        id="restartBtn">Restart
+                        Game</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
